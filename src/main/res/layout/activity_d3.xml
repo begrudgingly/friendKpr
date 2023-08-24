@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="#f6f6f6"
+    tools:context=".d3">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:cardElevation="5dp"
+        app:contentPadding="0dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:padding="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#f2e4ef"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:text="Friend's Information"
+                android:padding="15dp"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.35" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:hint="Full Name"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_date_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:focusable="false"
+                android:inputType="none"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#9F9F9F"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:hint="Phone Number"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:backgroundTint="#5f59c1"
+        android:text="Update Information"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
